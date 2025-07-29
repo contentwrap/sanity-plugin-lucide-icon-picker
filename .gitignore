@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Environment files
+.env
+
+# OS and editor files
+.DS_Store
+*.log
+
+# VSCode settings
+.vscode/
+
+# Jetbrains settings
+.idea/
+
+# Test output and coverage
+coverage/
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log* 

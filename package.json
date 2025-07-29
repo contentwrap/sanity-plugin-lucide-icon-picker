@@ -1,0 +1,85 @@
+{
+  "name": "sanity-plugin-lucide-icon-picker",
+  "version": "1.0.0",
+  "description": "Sanity plugin to choose Lucide icons",
+  "keywords": [
+    "sanity",
+    "sanity-plugin",
+    "lucide",
+    "icons",
+    "lucide-icons",
+    "sanity-lucide",
+    "sanity-icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentwrap/sanity-plugin-lucide-icon-picker.git"
+  },
+  "homepage": "https://github.com/contentwrap/sanity-plugin-lucide-icon-picker#readme",
+  "bugs": {
+    "url": "https://github.com/contentwrap/sanity-plugin-lucide-icon-picker/issues"
+  },
+  "license": "MIT",
+  "author": "ContentWrap <tamba@contentwrap.io>",
+  "sideEffects": false,
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "sanity.json",
+    "src",
+    "v2-incompatible.js"
+  ],
+  "scripts": {
+    "build": "plugin-kit verify-package --silent && pkg-utils build --strict --check --clean",
+    "format": "prettier --write --cache --ignore-unknown .",
+    "link-watch": "plugin-kit link-watch",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build",
+    "watch": "pkg-utils watch --strict"
+  },
+  "dependencies": {
+    "@sanity/icons": "^3.7.4",
+    "@sanity/incompatible-plugin": "^1.0.5",
+    "@sanity/ui": "^2.16.2",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "lucide-react": "^0.532.0"
+  },
+  "devDependencies": {
+    "@sanity/pkg-utils": "^7.8.10",
+    "@sanity/plugin-kit": "^4.0.19",
+    "@types/react": "^19.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-sanity": "^7.1.4",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-packagejson": "^2.5.17",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sanity": "^3.95.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "sanity": "^3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "browserslist": "extends @sanity/browserslist-config",
+  "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
+}
