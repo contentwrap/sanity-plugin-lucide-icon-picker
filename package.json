@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-lucide-icon-picker",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Sanity plugin to select and preview Lucide icons in the Sanity Studio",
   "keywords": [
     "sanity",
