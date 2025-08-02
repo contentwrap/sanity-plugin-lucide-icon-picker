@@ -1,6 +1,6 @@
 {
   "name": "sanity-plugin-lucide-icon-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sanity plugin to select and preview Lucide icons in the Sanity Studio",
   "keywords": [
     "sanity",
@@ -27,7 +27,7 @@
   "exports": {
     ".": {
       "source": "./src/index.ts",
-      "import": "./dist/index.mjs",
+      "import": "./dist/index.js",
       "default": "./dist/index.js"
     },
     "./package.json": "./package.json"
@@ -40,6 +40,12 @@
     "src",
     "v2-incompatible.js"
   ],
+  "sanityPlugin": {
+    "verifyPackage": {
+      "eslintImports": false,
+      "sanityV2Json": false
+    }
+  },
   "scripts": {
     "build": "plugin-kit verify-package --silent && pkg-utils build --strict --check --clean",
     "format": "prettier --write --cache --ignore-unknown .",
@@ -52,6 +58,7 @@
     "lucide-react": "^0.532.0"
   },
   "devDependencies": {
+    "@sanity/browserslist-config": "^1.0.5",
     "@sanity/incompatible-plugin": "^1.0.5",
     "@sanity/pkg-utils": "^7.8.10",
     "@sanity/plugin-kit": "^4.0.19",
@@ -75,9 +82,9 @@
     "react": "^18 || ^19",
     "sanity": "^3"
   },
+  "browserslist": "extends @sanity/browserslist-config",
   "engines": {
     "node": ">=18"
   },
-  "browserslist": "extends @sanity/browserslist-config",
   "packageManager": "pnpm@9.15.1+sha512.1acb565e6193efbebda772702950469150cf12bcc764262e7587e71d19dc98a423dff9536e57ea44c49bdf790ff694e83c27be5faa23d67e0c033b583be4bfcf"
 }

@@ -141,7 +141,7 @@ For optimal frontend performance:
 ## Requirements
 
 - Sanity Studio v3 or v4
-- React 18+
+- React 18 or 19
 - TypeScript (recommended)
 
 ---
