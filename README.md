@@ -11,7 +11,7 @@
   <br>
   <br>
 
-  <img src="README.gif" alt="Sanity Lucide Icon Picker Preview" />
+  <img src="demo.gif" alt="Sanity Lucide Icon Picker Preview" />
 </div>
 
 ---
