@@ -1,0 +1,25 @@
+# Development files (files field in package.json controls main inclusions)
+.eslintignore
+.eslintrc.js
+.prettierrc.json
+package.config.ts
+tsconfig.*.json
+v2-incompatible.js
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Sanity studio files
+sanity.json
+
+# Documentation assets (optional since files field already excludes)
+*.gif
+*.png
+*.jpg
+*.jpeg
+
+# Source maps (exclude from production)
+*.map
+**/*.map
